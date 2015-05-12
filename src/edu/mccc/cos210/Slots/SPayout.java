@@ -1,7 +1,9 @@
 package edu.mccc.cos210.Slots;
 
 import java.awt.Color;
+import java.awt.GridBagLayout;
 import java.awt.GridLayout;
+
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
@@ -9,7 +11,7 @@ import javax.swing.SwingConstants;
 public class SPayout extends JPanel {
 	private static final long serialVersionUID = 1L;
 	public SPayout() {
-		setLayout(new GridLayout(5, 7));
+		setLayout(new GridLayout(5, 7, 0, 0));
 		Seven();
 		Lime();
 		Cherry();
@@ -24,7 +26,7 @@ public class SPayout extends JPanel {
 		}
 		displayFruit(group);
 		JLabel label = new JLabel("75");
-		label.setFont(getFont().deriveFont(15.0f));
+		label.setFont(getFont().deriveFont(32.0f));
 		label.setForeground(Color.WHITE);
 		label.setHorizontalAlignment(SwingConstants.CENTER);
 		add(label);
@@ -40,7 +42,7 @@ public class SPayout extends JPanel {
 		}
 		displayFruit(group);
 		JLabel label = new JLabel("50");
-		label.setFont(getFont().deriveFont(15.0f));
+		label.setFont(getFont().deriveFont(32.0f));
 		label.setForeground(Color.WHITE);
 		label.setHorizontalAlignment(SwingConstants.CENTER);
 		add(label);
@@ -56,7 +58,7 @@ public class SPayout extends JPanel {
 		}
 		displayFruit(group);
 		JLabel label = new JLabel("25");
-		label.setFont(getFont().deriveFont(15.0f));
+		label.setFont(getFont().deriveFont(32.0f));
 		label.setForeground(Color.WHITE);
 		label.setHorizontalAlignment(SwingConstants.CENTER);
 		add(label);
@@ -72,7 +74,7 @@ public class SPayout extends JPanel {
 		}
 		displayFruit(group);
 		JLabel label = new JLabel("10");
-		label.setFont(getFont().deriveFont(15.0f));
+		label.setFont(getFont().deriveFont(32.0f));
 		label.setForeground(Color.WHITE);
 		label.setHorizontalAlignment(SwingConstants.CENTER);
 		add(label);
@@ -88,7 +90,7 @@ public class SPayout extends JPanel {
 		}
 		displayFruit(group);
 		JLabel label = new JLabel("5");
-		label.setFont(getFont().deriveFont(15.0f));
+		label.setFont(getFont().deriveFont(32.0f));
 		label.setForeground(Color.WHITE);
 		label.setHorizontalAlignment(SwingConstants.CENTER);
 		add(label);

@@ -92,7 +92,7 @@ public class SView extends JPanel implements ActionListener{
 		helpme.add(reel2, gbc);
 	}
 	private JToolBar createToolbar() {
-		JToolBar jtb = new JToolBar(FlowLayout.LEFT);
+		JToolBar jtb = new JToolBar(BorderLayout.NORTH);
 		jtb.setFloatable(false);
 		jtb.setOpaque(false);
 		bet1.addActionListener(this);
@@ -113,12 +113,16 @@ public class SView extends JPanel implements ActionListener{
 			&& reel0.getReelSelection()== reel2.getReelSelection()) {
 			if (reel0.getReelSelection() == "Orange") {
 				winnings = 5;
+			} else{
 				if (reel0.getReelSelection() == "Grapes") {
 					winnings = 10;
-					if (reel0.getReelSelection() == "Lime") {
+				} else{
+					if (reel0.getReelSelection() == "Cherries") {
 						winnings = 25;
-						if (reel0.getReelSelection() == "Cherries") {
+					} else{
+						if (reel0.getReelSelection() == "Lime") {
 							winnings = 50;
+						} else{
 							if (reel0.getReelSelection() == "Seven") {
 								winnings = 75;
 							}
@@ -139,12 +143,15 @@ public class SView extends JPanel implements ActionListener{
 				helpme.setVisible(false);
 				win.setVisible(false);
 				sjp.setVisible(false);
-				add(sp);
+				panel.setVisible(false);
+				sp.setOpaque(false);
+				panel1.add(sp);
 			} else {
 				helpme.setVisible(true);
 				win.setVisible(true);
 				sjp.setVisible(true);
-				remove(sp);
+				panel.setVisible(true);
+				panel1.remove(sp);
 			}
 		}
 		if(ae.getSource() == bet1) {
