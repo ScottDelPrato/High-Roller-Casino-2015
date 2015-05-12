@@ -1,1 +1,2 @@
-# High-Roller-Casino-2015
+# High-Roller-Casino
+COS210 Final Project
